@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Konversi Suhu</h1>
+      <p>
+        <label for="paragraf-1"
+          >Masukkan suhu Celcius (°C) ke kotak di bawah, lalu klik tombol
+          Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit
+          (°F).</label
+        >
+      </p>
+      <form name="form-konversi">
+        <div class="konversi">
+          <div class="container-konversi">
+            <label for="celcius">Celcius (°C):</label>
+            <input type="text" id="angka_input" class="intext" autofocus />
+            <div class="button-cal">
+              <button
+                type="button"
+                title="Konversi"
+                class="btn"
+                onclick="konversi()"
+              >
+                Konversi
+              </button>
+              <button type="reset" title="Reset" class="btn" onclick="reset()">
+                Reset
+              </button>
+              <button
+                type="button"
+                title="Reverse"
+                class="btn"
+                onclick="toggleKonversi()"
+              >
+                Reverse
+              </button>
+            </div>
+            <label for="fahrenheit">Fahrenheit (°F):</label>
+            <textarea id="output" class="outtext" readonly disabled></textarea>
+            <label>Cara Kalkulasi:</label>
+            <div>
+              <input
+                id="output_kalkulasi"
+                class="outtext"
+                disabled
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+      <hr />
+      <h3>Cara Konversi dari Celcius ke Fahrenheit</h3>
+      <p>
+        Suhu dalam Derajat Fahrenheit (°F) sama dengan suhu dalam Derajat
+        Celcius (°C) dikali 9/5 ditambah 32
+      </p>
+      <p><label for="paragraf-3">Suhu °F = (Suhu °C x 9/5) + 32</label></p>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
